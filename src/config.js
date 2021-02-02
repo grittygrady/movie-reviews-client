@@ -1,7 +1,7 @@
-
-const inDev = process.env.NODE_ENV === 'development'
 export default {
-  API_ENDPOINT: 
-  inDev ? 'http://localhost:8000/api' : 
-  'https://thawing-sierra-58826.herokuapp.com/api'
+  API_ENDPOINT: 'http://localhost:8000'
 }
+// const inDev = process.env.NODE_ENV === 'development'
+// export default {
+//   API_ENDPOINT: inDev ? 'http://localhost:8000/api' : 'https://lit-mesa-39960.herokuapp.com/api'
+// }
