@@ -77,6 +77,7 @@
   margin: 20px 0;
 }
 
+/*****  MAYBE REMOVE ****/
 .review-details button {
   background: darkmagenta;
   color: white;
@@ -122,3 +123,4 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
