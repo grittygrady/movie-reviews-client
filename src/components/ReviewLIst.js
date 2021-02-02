@@ -1,16 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ReviewList = (props) => {
-  const { movies, title } = props;
+  const { reviews, title } = props;
 
   return ( 
-    <div className="movie-list">
+    <div className="review-list">
       <h2>{title}</h2>
-      {movies.map((movie) => (
-        <div className="movie-preview" key={movie.id}>
-          <h2>{movie.title}</h2>
-          <p>Written by: {movie.author}</p>
-          <p>Score: {movie.rating}</p>
+      {reviews.map((review) => (
+        <div className="review-preview" key={review.id}>
+          <Link to={`/reviews/${review.id}`}>
+            <h2>{review.title}</h2>
+            <p>Score: {review.rating}</p>
+            <p>Written by: {review.author}</p>
+          </Link>
         </div>
       ))}
     </div>
