@@ -3,9 +3,10 @@ import { useParams } from 'react-router-dom';
 import useFetch from '../hooks/useFetch';
 import config from '../config';
 
-const ReviewDetails = () => {
+const ReviewDetails = (props) => {
   const { id } = useParams();
-  const { data: review, isLoading, error } = useFetch(`${config.API_ENDPOINT}/reviews/${id}`);
+  // const { data: review, isLoading, error } = useFetch(`${config.API_ENDPOINT}/reviews/${id}`);
+  const { data: review, isLoading, error } = props;
 
   return ( 
     <div className="review-details">

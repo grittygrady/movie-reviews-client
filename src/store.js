@@ -64,4 +64,4 @@ const reviews = [
     }
   ]
 
-export default Store;
+export default reviews;

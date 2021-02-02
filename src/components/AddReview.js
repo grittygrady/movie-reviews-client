@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import config from '../config';
 
-const AddReview = () => {
+const AddReview = (props) => {
   const [title, setTitle] = useState('');
   const [rating, setRating] = useState(1);
   const [author, setAuthor] = useState('');
@@ -20,19 +20,22 @@ const AddReview = () => {
       rating,
       author,
       body
-    };
-    setIsLoading(true)
-    fetch(`${config.API_ENDPOINT}/reviews`, {
-      method: 'POST',
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(review)
-    })
-    .then(() => {
-      setIsLoading(false)
-      history.push('/')
-    })
+    }
+    props.handleAddReview(review)
+    history.push('/')
+
+    // setIsLoading(true)
+    // fetch(`${config.API_ENDPOINT}/reviews`, {
+    //   method: 'POST',
+    //   headers: {
+    //     "Content-Type": "application/json"
+    //   },
+    //   body: JSON.stringify(review)
+    // })
+    // .then(() => {
+    //   setIsLoading(false)
+    //   history.push('/')
+    // })
   }
 
   return ( 
