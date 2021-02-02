@@ -39,88 +39,20 @@
   padding: 20px;
 }
 
-/* Review previews / list */
+/* Movie review previews / list */
 
-.review-preview {
+.movie-preview {
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid whitesmoke;
 }
 
-.review-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
+.movie-preview:hover {
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
 }
 
-.review-preview h2 {
+.movie-preview h2 {
   font-size: 20px;
   color: darkmagenta;
   margin-bottom: 8px;
 }
-
-.review-preview h2:hover {
-  text-decoration: underline;
-}
-
-.review-preview a {
-  text-decoration: none;
-}
-
-/* Review Details */
-
-.review-details h2 {
-  font-size: 20px;
-  color: darkmagenta;
-  margin-bottom: 10px;
-}
-
-.review-details div {
-  margin: 20px 0;
-}
-
-/*****  MAYBE REMOVE ****/
-.review-details button {
-  background: darkmagenta;
-  color: white;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-/* Add Review Component */
-
-.add-review {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.add-review label {
-  text-align: left;
-  display: block;
-}
-
-.add-review h2 {
-  font-size: 20px;
-  color: darkmagenta;
-  margin-bottom: 30px;
-}
-
-.add-review input, .add-review textarea, .add-review select {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
-}
-
-.add-review button {
-  background: darkmagenta;
-  color: white;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-

@@ -6,9 +6,7 @@ const useFetch = (url) => {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    const abortCont = new AbortController();
-
-    fetch(url, { signal: abortCont.signal })
+    fetch(url)
       .then(res => {
         if (!res.ok) {
           throw Error('Could not fetch reviews');
@@ -21,14 +19,9 @@ const useFetch = (url) => {
         setError(null)
       })
       .catch(err => {
-        if (err.name === 'AbortError') {
-          console.log('Fetch Aborted')
-        } else {
-          setError(err.message);
-          setIsLoading(false);
-        }
+        setError(err.message);
+        setIsLoading(false);
       })
-      return () => abortCont.abort();
   }, [url])
 
   return { data, isLoading, error }

@@ -1,16 +1,17 @@
 import React from 'react';
 import useFetch from '../hooks/useFetch';
-import ReviewList from './ReviewList';
-import config from '../config';
+import ReviewList from './ReviewLIst';
+
+
 
 const Home = () => {
-  const { data: reviews, isLoading, error } = useFetch(`${config.API_ENDPOINT}/reviews`)
+  const { data: movies, isLoading, error } = useFetch('http://localhost:8000/movies')
 
   return ( 
     <div className="home">
       {error && <><h2>Could not get reviews. Please try again.</h2></>}
       {isLoading && <><h2>Loading...</h2></>}
-      {reviews && <ReviewList reviews={reviews} title='All Reviews' />}
+      {movies && <ReviewList movies={movies} title='All Reviews' />}
     </div>
   );
 }
