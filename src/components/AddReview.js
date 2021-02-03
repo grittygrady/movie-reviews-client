@@ -22,7 +22,7 @@ const AddReview = () => {
       body
     };
     setIsLoading(true)
-    fetch(`${config.API_ENDPOINT}/addreview`, {
+    fetch(`${config.API_ENDPOINT}/api/addreview`, {
       method: 'POST',
       headers: {
         "Content-Type": "application/json"

@@ -5,7 +5,7 @@ import config from '../config';
 
 const ReviewDetails = () => {
   const { id } = useParams();
-  const { data: review, isLoading, error } = useFetch(`${config.API_ENDPOINT}/reviews/${id}`);
+  const { data: review, isLoading, error } = useFetch(`${config.API_ENDPOINT}/api/reviews/${id}`);
 
   return ( 
     <div className="review-details">

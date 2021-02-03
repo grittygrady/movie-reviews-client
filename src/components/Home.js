@@ -4,7 +4,7 @@ import ReviewList from './ReviewList';
 import config from '../config';
 
 const Home = () => {
-  const { data: reviews, isLoading, error } = useFetch(`${config.API_ENDPOINT}/`)
+  const { data: reviews, isLoading, error } = useFetch(`${config.API_ENDPOINT}/api/`)
 
   return ( 
     <div className="home">
