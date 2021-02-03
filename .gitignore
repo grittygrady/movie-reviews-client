@@ -25,3 +25,5 @@ yarn-debug.log*
 yarn-error.log*
 notes.txt
 movie-review-client.code-workspace
+
+.vercel
