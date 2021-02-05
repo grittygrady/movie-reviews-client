@@ -5,7 +5,7 @@ A work in progress, a hub for friends to share movie reviews. Authentication com
 <hr>
 <h3>Screenshots</h3>
 Home
-<img src="">
+<img src="https://github.com/grittygrady/movie-reviews-client/blob/master/src/images/previews/reviewlist.png">
 Review Detail
 <img src="https://github.com/grittygrady/movie-reviews-client/blob/master/src/images/previews/detail.png">
 Add Review Page
