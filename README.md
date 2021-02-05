@@ -4,12 +4,12 @@
 A work in progress, a hub for friends to share movie reviews. Authentication coming soon!
 <hr>
 <h3>Screenshots</h3>
+Home
 <img src="">
-Landing Page
-<img src="">
-Signup Page
-<img src="">
-Main Page
+Review Detail
+<img src="https://github.com/grittygrady/movie-reviews-client/blob/master/src/images/previews/detail.png">
+Add Review Page
+<img src="https://github.com/grittygrady/movie-reviews-client/blob/master/src/images/previews/addreview.png">
 <hr>
 Live at https://movie-reviews-client.vercel.app/
 
