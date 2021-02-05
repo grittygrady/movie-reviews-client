@@ -1,124 +1,236 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* FONT IMPORTS */
 
-* {
-  margin: 0;
-  font-family: "Quicksand";
-  color: #333;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Teko:wght@300;400&display=swap');
 
-.navbar {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid black;
-}
+/* CSS RULES */
 
-.navbar h1 {
-  color: darkmagenta;
-}
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Teko', sans-serif; */
 
-.nabvar .links {
-  margin-left: auto;
-}
+/* VENDOR PREFIXES
 
-.navbar a {
-  margin-left: 16px;
-  text-decoration: none;
-  padding: 6px;
-}
+.example {
+  background: #2db34a;
+  -webkit-transition-property: background;
+  -moz-transition-property: background;
+  -o-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear; */
 
-.navbar a:hover {
-  color: red;
-}
+  /* GENERAL */
 
-.content {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-}
+  * {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    color:#D7E3FA;
+  }
 
-/* Review previews / list */
+    body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 1.1rem;
+    height: 100%;
+    background-image: url(/src/images/popcornmachine.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 25px;
+  }
 
-.review-preview {
-  padding: 10px 16px;
-  margin: 20px 0;
-  border-bottom: 1px solid whitesmoke;
-}
+  .navbar {
+    background-color:#024873;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+  }
 
-.review-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
-}
+  .navbar h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 35px;
+    color: #D7E3FA;
+  }
 
-.review-preview h2 {
-  font-size: 20px;
-  color: darkmagenta;
-  margin-bottom: 8px;
-}
+  .nabvar .links {
+    margin-left: auto;
+  }
 
-.review-preview h2:hover {
-  text-decoration: underline;
-}
+  .navbar a {
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+    float: right;
+    font-family: 'Teko', sans-serif;
+    font-size: 28px;
+  }
 
-.review-preview a {
-  text-decoration: none;
-}
+  .navbar a:hover {
+    color: #D966A5;
+  }
 
-/* Review Details */
+  .content {
+    max-width: 600px;
+    margin: 0px auto 0px auto;
+    padding: 20px;
+  }
 
-.review-details h2 {
-  font-size: 20px;
-  color: darkmagenta;
-  margin-bottom: 10px;
-}
+  /* Review previews / list */
 
-.review-details div {
-  margin: 20px 0;
-}
+  .review-preview {
+    background-color: #D7E3FA;
+    border-radius: 7px;
+    padding: 10px 16px;
+    margin: 20px 0 0 0;
+  }
 
-.review-details button {
-  background: darkmagenta;
-  color: white;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
+  .review-preview:hover {
+    box-shadow: 3px 3px 5px rgba(191, 119, 191, 100);
+  }
 
-/* Add Review Component */
+  .review-preview h2 {
+    font-size: 20px;
+    color: #0D0D0D;
+    /* margin-bottom: 8px; */
+  }
 
-.add-review {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
+  .review-preview p {
+    color: #0D0D0D;
+  }
 
-.add-review label {
-  text-align: left;
-  display: block;
-}
+  .review-preview h2:hover {
+    text-decoration: underline;
+    color: #0477BF;
+  }
 
-.add-review h2 {
-  font-size: 20px;
-  color: darkmagenta;
-  margin-bottom: 30px;
-}
+  .review-preview a {
+    text-decoration: none;
+  }
 
-.add-review input, .add-review textarea, .add-review select {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd;
-  box-sizing: border-box;
-  display: block;
-}
+  /* Review Details */
 
-.add-review button {
-  background: darkmagenta;
-  color: white;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
+  .review-details {
+    background-color: #D7E3FA;
+    border-radius: 7px;
+  }
+
+  .review-details h2 {
+    font-size: 20px;
+    color: #0D0D0D;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    padding: 10px;
+  }
+
+  .review-details p {
+    color: #0D0D0D;
+    margin-left: 30px;
+  }
+
+  .review-details div {
+    margin: 20px 0 0 0;
+    color: #0D0D0D;
+    padding: 5px 25px 20px 25px;
+  }
+
+  .review-details button {
+    background: #024873;
+    color: #D7E3FA;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .review-list > h2 {;
+    color: #D7E3FA;
+  }
+
+  /* Add Review Component */
+
+  .add-review {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .add-review label {
+    text-align: left;
+    display: block;
+    color: #0D0D0D;
+    background-color: #D7E3FA;
+    padding: 5px;
+    border-radius: 7px;
+  }
+
+  .add-review h2 {
+    font-size: 30px;
+    color: #D7E3FA;
+    margin-bottom: 30px;
+  }
+
+  .add-review input,
+  .add-review textarea,
+  .add-review select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 7px;
+  }
+
+  .add-review button {
+    background: #024873;
+    color: white;
+    border: 0;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+
+/* MEDIA QUERIES */
+@media all and (min-width: 800px) {
+
+  .navbar {
+    max-width: 100%;
+  }
+
+  .navbar h1 {
+    font-size: 3rem;
+    padding-left: 75px;
+  }
+
+  .navbar a {
+    float: right;
+    margin-left: 60px;
+    font-size: 2rem;
+    padding-left: 100px;
+  }
+
+  .content {
+    max-width: 100%;
+    height: 100vw;
+  }
+
+  .review-list, .review-details {
+    max-width: 60%;
+    margin: auto;
+  }
+
+  .add-review button {
+    padding: 20px;
+    font-size: 20px;
+  }
+  
 }
