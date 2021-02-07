@@ -31,7 +31,7 @@ const AddReview = () => {
     })
     .then(() => {
       setIsLoading(false)
-      history.push('/')
+      history.push('/allreviews')
     })
   }
 
