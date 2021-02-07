@@ -173,8 +173,11 @@ font-family: 'Teko', sans-serif; */
 
   .add-review h2 {
     font-size: 30px;
-    color: #D7E3FA;
+    color: #0D0D0D;
     margin-bottom: 30px;
+    background-color: #D7E3FA;
+    padding: 5px;
+    border-radius: 7px;
   }
 
   .add-review input,

@@ -43,6 +43,7 @@ const AddReview = () => {
         <input 
           type="text" 
           name='movieTitle' 
+          id='movieTitle'
           aria-label='Movie title'
           value={title}
           onChange={(e) => setTitle(e.target.value)}
@@ -51,6 +52,7 @@ const AddReview = () => {
         <label htmlFor='rating'>Rating (1-5)</label>
         <select 
           name='rating'
+          id='rating'
           aria-label='rating'
           value={rating}
           onChange={(e) => setRating(e.target.value)}
@@ -66,6 +68,7 @@ const AddReview = () => {
         <input 
           type='text'
           name='author'
+          id='author'
           aria-label='author'
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
@@ -76,6 +79,7 @@ const AddReview = () => {
           cols="30" 
           rows="10"
           name='body'
+          id='body'
           aria-label='review body'
           value={body}
           onChange={(e) => setBody(e.target.value)}
