@@ -57,7 +57,7 @@ font-family: 'Teko', sans-serif; */
   .navbar h1 {
     font-family: 'Teko', sans-serif;
     font-size: 35px;
-    color: #D7E3FA;
+    color: white;
   }
 
   .nabvar .links {
@@ -71,6 +71,7 @@ font-family: 'Teko', sans-serif; */
     float: right;
     font-family: 'Teko', sans-serif;
     font-size: 28px;
+    color: white;
   }
 
   .navbar a:hover {
@@ -81,6 +82,27 @@ font-family: 'Teko', sans-serif; */
     max-width: 600px;
     margin: 0px auto 0px auto;
     padding: 20px;
+  }
+
+  /* Landing Page */
+
+  .landing {
+    text-align: center;
+    max-width: 600px;
+    margin: 0px auto 0px auto;
+    padding: 20px;
+    background-color: #D7E3FA;
+    color: #0D0D0D;
+    height: 30vh;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing h2, .landing p {
+    margin-bottom: 10px;
+    color: #0D0D0D;
   }
 
   /* Review previews / list */
@@ -151,7 +173,11 @@ font-family: 'Teko', sans-serif; */
   }
 
   .review-list > h2 {;
-    color: #D7E3FA;
+    background-color: #D7E3FA;
+    border-radius: 7px;
+    color: black;
+    padding: 5px;
+    text-align: center;
   }
 
   /* Add Review Component */
@@ -216,15 +242,20 @@ font-family: 'Teko', sans-serif; */
   }
 
   .navbar a {
-    float: right;
-    margin-left: 60px;
+    float: left;
+    margin-left: 90px;
     font-size: 2rem;
     padding-left: 100px;
   }
 
   .content {
     max-width: 100%;
-    height: 100vw;
+    height: 100vh;
+  }
+
+  .landing {
+    max-width: 100%;
+    height: 25vh;
   }
 
   .review-list, .review-details {
