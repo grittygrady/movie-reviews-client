@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 
+// This is a custom hook used throughout the application to fetch data based on an environmental variable. 
+// Its' default behavior is to 'GET' but it can be modified for other methods.
+
 const useFetch = (url) => {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
